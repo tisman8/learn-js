@@ -17,3 +17,7 @@ const originalArray = [
   console.log('Original Array:', originalArray);
   console.log('New Array (shallow copy with modified names):', newArray);
   
+  originalArray[1].name = 'Chris';
+
+  console.log('Fucked with original array:', originalArray);
+  console.log('Fucked with copied array:', newArray);
